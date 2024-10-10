@@ -1,66 +1,46 @@
-## Foundry
+# Yul Puzzles by RareSkills
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+## How to play
+Open `src/SimpleRevert.sol` and `test/SimpleRevert.t.sol`. Your goal is to write assembly code in `src/Return42.sol` that makes the test pass. You may only write assembly code.
 
-Foundry consists of:
-
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
-
-## Documentation
-
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
+Run the test with
 
 ```shell
-$ forge build
+forge test --mp test/Return42.t.sol
 ```
 
-### Test
+Now repeat this with the other puzzles.
 
-```shell
-$ forge test
-```
+Refer to our free resource: https://www.rareskills.io/proxy-patterns
 
-### Format
+## Suggested order of the Puzzles
+1. SimpleRevert
+2. RevertWithSelector
+3. Return42
+4. RepeatAfterMe
+5. Double  
+6. DoubleOrNothing  
+7. GetX  
+8. SetX  
+9. KeccakX  
+10. ArrayIndex  
+11. ArrayIndexOutOfBounds  
+12. SetArray  
+13. GetMapping  
+14. SetMapping  
+15. GetDoubleMapping  
+16. SetDoubleMapping  
+17. ReadPacked  
+18. SetPacked
 
-```shell
-$ forge fmt
-```
+--
+#### abi encoding
+Array length
+Sum Of Array
 
-### Gas Snapshots
+#### value related
+Change (callvalue)
+HowRichAmI
+HowRichAreYou
 
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+#### logs related
