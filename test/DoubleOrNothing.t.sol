@@ -2,18 +2,19 @@
 pragma solidity ^0.8.13;
 
 import {Test, console} from "forge-std/Test.sol";
-import {Double} from "../src/Double.sol";
+import {DoubleOrNothing} from "../src/DoubleOrNothing.sol";
 
 contract DoubleOrNothingTest is Test {
-    Double public c;
+    DoubleOrNothing public c;
 
     function setUp() public {
-        c = new Double();
+        c = new DoubleOrNothing();
     }
 
     function test_DoubleOrNothing(uint256 x) public {
         vm.assume(x < type(uint256).max / 2);
         uint256 r = c.main(x);
+        if (x > 10) x = 0;
         assertEq(r, 2 * x);
     }
 }

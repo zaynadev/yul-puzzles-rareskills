@@ -2,7 +2,6 @@
 pragma solidity ^0.8.13;
 
 contract DoubleOrNothing {
-
     function main(uint256 x) external pure returns (uint256) {
         assembly {
             // your code here
