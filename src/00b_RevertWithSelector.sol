@@ -8,6 +8,9 @@ contract RevertWithSelector {
         assembly {
             // your code here
             // revert with the custom error "RevertData"
+            // do the Solidity equivalent of
+            // `revert RevertData()`
+            // but in assembly
             // hint: https://www.rareskills.io/post/assembly-revert
         }
     }

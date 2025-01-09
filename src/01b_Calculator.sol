@@ -2,7 +2,9 @@
 pragma solidity ^0.8.13;
 
 contract Calculator {
-    // perform the arithmetic operations assumming they won't overflow
+    // perform the arithmetic operations assumming they won't overflow or underflow
+    // the list of math operations can be found here:
+    // https://docs.soliditylang.org/en/latest/yul.html#evm-dialect
 
     function add(uint256 x, uint256 y) external pure returns (uint256) {
         assembly {

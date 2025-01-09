@@ -10,6 +10,9 @@ contract Double {
           // assume x will always be less
           // than half type(uint256).max
           // so it won't overflow
+          // hint: x can be directly accessed in assembly
+
+          // see here for how to multiply in YUL: https://docs.soliditylang.org/en/latest/yul.html#evm-dialect
       }
   }
 }

@@ -8,6 +8,9 @@ contract MaxOfTwoValues {
             // return the maximum value between x and y
             // assume the two values are not the same
             // Hint: use If-statement to check
+
+            // here is how you do a conditional statement in yul
+            // https://docs.soliditylang.org/en/latest/yul.html#if
         }
     }
 }

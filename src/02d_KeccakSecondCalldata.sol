@@ -7,6 +7,7 @@ contract KeccakSecondCalldata {
             // your code here
             // return the keccak hash of the SECOND argument in the calldata
             // Hint: use keccak256(offset, size)
+            // solve KeccakFirstCalldata before this problem
         }
     }
 }

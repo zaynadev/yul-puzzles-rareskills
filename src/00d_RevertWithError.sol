@@ -6,7 +6,7 @@ contract RevertWithError {
         assembly {
             // revert the function with an error of type `Error(string)`
             // use "RevertRevert" as error message
-            // Hint: The error type is built-in and cannot be re-defined. See https://www.rareskills.io/post/try-catch-solidity
+            // Hint: The error type is a predefined four bytes. See https://www.rareskills.io/post/try-catch-solidity
         }
     }
 }

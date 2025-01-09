@@ -8,7 +8,8 @@ contract RevertWithSelectorPlusArgs {
         assembly {
             // your code here
             // revert custom error with x parameter
-            // Hint: concat(selector, x)
+            // Hint: concatenate selector and x by storing them
+            // adjacent to each other in memory
         }
     }
 }
