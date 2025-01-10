@@ -9,6 +9,7 @@ contract PopFromDynamicArray {
             // your code here
             // pop the last element from the dynamic array `popFromMe`
             // dont forget to clean the popped element's slot.
+            // Hint: https://www.rareskills.io/post/solidity-dynamic
         }
     }
 
