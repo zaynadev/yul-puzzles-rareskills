@@ -12,6 +12,22 @@ contract WriteToPacked128 {
             // be careful not to alter the value of `someValue` variable
             // Hint: storage slots are arranged sequentially. Determine the storage slot of `writeHere`
             // and use `sstore` to modify only the `writeHere` variable.
+            /*
+            let value := sload(0)
+            let firstValue := v
+            let secondValue := shl(shr(128, value), 128)
+            mstore(0x00, secondValue)
+            mstore(0x10, shl(128, firstValue))
+            sstore(0, mload(0x00))
+            */
+            let value := sload(0)
+            let mask1 := sub(shl(128, 1), 1)
+            let mask2 := not(mask1)
+
+            let fistValue := and(mask1, v)
+            let secondValue := and(mask2, value)
+
+            sstore(0, or(fistValue, secondValue))
         }
     }
 }
