@@ -9,6 +9,11 @@ contract WriteToFixedArray {
             // your code here
             // store the values in the fixed array `x` in the storage variable `writeHere`
             // Hint: https://www.rareskills.io/post/solidity-dynamic
+            sstore(0, calldataload(0x04))
+            sstore(1, calldataload(0x24))
+            sstore(2, calldataload(0x44))
+            sstore(3, calldataload(0x64))
+            sstore(4, calldataload(0x84))
         }
     }
 
