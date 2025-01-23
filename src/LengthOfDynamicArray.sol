@@ -7,6 +7,9 @@ contract LengthOfDynamicArray {
             // your code here
             // return the length of array `x`
             // Hint: https://www.rareskills.io/post/solidity-dynamic
+            let offset := calldataload(0x04)
+            calldatacopy(0x00, add(0x04, offset), 0x20)
+            return(0x00, 0x20)
         }
     }
 }
