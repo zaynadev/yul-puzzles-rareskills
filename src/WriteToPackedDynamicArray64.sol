@@ -10,6 +10,12 @@ contract WriteToPackedDynamicArray64 {
             // write the code to store v1, v2, v3, v4, and v5 in the `writeHere` array in sequential order.
             // Hint: `writeHere` is a dynamic array, so you will need to access its length and use `mstore` or `sstore`
             // appropriately to push new values into the array.
+            mstore(0x00, 0x00)
+            let h := keccak256(0x00, 0x20)
+            let firstSlot := or(or(or(v1, shl(64, v2)), shl(128, v3)), shl(192, v4))
+            sstore(h, firstSlot)
+            sstore(add(h, 1), v5)
+            sstore(0, 5)
         }
     }
 }
