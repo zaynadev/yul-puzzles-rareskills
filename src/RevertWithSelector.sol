@@ -12,6 +12,9 @@ contract RevertWithSelector {
             // `revert RevertData()`
             // but in assembly
             // hint: https://www.rareskills.io/post/assembly-revert
+            let selector := shl(224, 0xa3b7e096)
+            mstore(0x00, selector)
+            revert(0x00, 0x04)
         }
     }
 }
