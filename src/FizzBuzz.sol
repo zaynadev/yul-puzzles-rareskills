@@ -11,6 +11,26 @@ contract FizzBuzz {
             // else return an empty string "".
 
             // Assume `num` is greater than 0.
+
+            let isDiv3 := iszero(mod(num, 3))
+            let isDiv5 := iszero(mod(num, 5))
+
+            let s := ""
+
+            if isDiv3 { s := "fizz" }
+            if isDiv5 { s := "buzz" }
+            if and(isDiv3, isDiv5) { s := "fizzbuzz" }
+
+            let length := 0
+            switch s
+            case "buzz" { length := 4 }
+            case "fizz" { length := 4 }
+            case "fizzbuzz" { length := 8 }
+
+            mstore(0x00, 0x20)
+            mstore(0x20, length)
+            mstore(0x40, s)
+            return(0x00, 0x60)
         }
     }
 }
