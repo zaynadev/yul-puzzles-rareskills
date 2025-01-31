@@ -10,7 +10,7 @@ contract SendEther {
             // assume `amount` is less than or equal to the contract balance
             // assume `amount` is in wei
             // hint: use the `call` opcode: https://docs.soliditylang.org/en/latest/yul.html#evm-dialect
-
+            // hint: use the `gas` opcode to get the gas left
         }
     }
 }
