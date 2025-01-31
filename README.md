@@ -77,3 +77,5 @@ Go through the puzzles sequentially
 58. [ReturnSimpleStruct](https://github.com/RareSkills/yul-puzzles/blob/main/src/ReturnSimpleStruct.sol)
 59. [ReturnTupleOfUint256String](https://github.com/RareSkills/yul-puzzles/blob/main/src/ReturnTupleOfUint256String.sol)
 60. [ReturnTupleOfStringUnit256](https://github.com/RareSkills/yul-puzzles/blob/main/src/ReturnTupleOfStringUnit256.sol)
+61. [SendEther](https://github.com/RareSkills/yul-puzzles/blob/main/src/SendEther.sol)
+62. [SendAllEther](https://github.com/RareSkills/yul-puzzles/blob/main/src/SendAllEther.sol)
