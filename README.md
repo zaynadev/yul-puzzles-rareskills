@@ -82,3 +82,4 @@ Go through the puzzles sequentially
 63. [PaymentSplitter](https://github.com/RareSkills/yul-puzzles/blob/main/src/PaymentSplitter.sol)
 64. [SendBack](https://github.com/RareSkills/yul-puzzles/blob/main/src/SendBack.sol)
 65. [BasicBank](https://github.com/RareSkills/yul-puzzles/blob/main/src/BasicBank.sol)
+66. [SimpleCall](https://github.com/RareSkills/yul-puzzles/blob/main/src/SimpleCall.sol)
