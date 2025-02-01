@@ -85,3 +85,4 @@ Go through the puzzles sequentially
 66. [SimpleCall](https://github.com/RareSkills/yul-puzzles/blob/main/src/SimpleCall.sol)
 67. [SimpleCallWithValue](https://github.com/RareSkills/yul-puzzles/blob/main/src/SimpleCallWithValue.sol)
 68. [Approve](https://github.com/RareSkills/yul-puzzles/blob/main/src/Approve.sol)
+69. [TransferFrom](https://github.com/RareSkills/yul-puzzles/blob/main/src/TransferFrom.sol)
