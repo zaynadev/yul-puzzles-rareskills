@@ -88,3 +88,4 @@ Go through the puzzles sequentially
 69. [TransferFrom](https://github.com/RareSkills/yul-puzzles/blob/main/src/TransferFrom.sol)
 70. [BalanceOf](https://github.com/RareSkills/yul-puzzles/blob/main/src/BalanceOf.sol)
 71. [CreateSimple](https://github.com/RareSkills/yul-puzzles/blob/main/src/CreateSimple.sol)
+72. [CreateSimpleCalldata](https://github.com/RareSkills/yul-puzzles/blob/main/src/CreateSimpleCalldata.sol)
