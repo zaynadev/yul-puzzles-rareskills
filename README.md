@@ -89,3 +89,4 @@ Go through the puzzles sequentially
 70. [BalanceOf](https://github.com/RareSkills/yul-puzzles/blob/main/src/BalanceOf.sol)
 71. [CreateSimple](https://github.com/RareSkills/yul-puzzles/blob/main/src/CreateSimple.sol)
 72. [CreateSimpleCalldata](https://github.com/RareSkills/yul-puzzles/blob/main/src/CreateSimpleCalldata.sol)
+73. [DeployOneByte](https://github.com/RareSkills/yul-puzzles/blob/main/src/DeployOneByte.sol)
