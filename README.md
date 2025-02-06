@@ -92,5 +92,6 @@ Go through the puzzles sequentially
 74. [DeployOneByte](https://github.com/RareSkills/yul-puzzles/blob/main/src/DeployOneByte.sol)
 75. [DeployNBytes](https://github.com/RareSkills/yul-puzzles/blob/main/src/DeployNBytes.sol)
 76. [SquareRoot](https://github.com/RareSkills/yul-puzzles/blob/main/src/SquareRoot.sol)
-77. [AbsoluteValue](https://github.com/RareSkills/yul-puzzles/blob/main/src/AbsoluteValue.sol)
-78. [Log2](https://github.com/RareSkills/yul-puzzles/blob/main/src/Log2.sol)
+77. [Division](https://github.com/RareSkills/yul-puzzles/blob/main/src/Division.sol)
+78. [AbsoluteValue](https://github.com/RareSkills/yul-puzzles/blob/main/src/AbsoluteValue.sol)
+79. [Log2](https://github.com/RareSkills/yul-puzzles/blob/main/src/Log2.sol)
