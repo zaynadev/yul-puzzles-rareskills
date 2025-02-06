@@ -94,4 +94,5 @@ Go through the puzzles sequentially
 76. [SquareRoot](https://github.com/RareSkills/yul-puzzles/blob/main/src/SquareRoot.sol)
 77. [Division](https://github.com/RareSkills/yul-puzzles/blob/main/src/Division.sol)
 78. [AbsoluteValue](https://github.com/RareSkills/yul-puzzles/blob/main/src/AbsoluteValue.sol)
-79. [Log2](https://github.com/RareSkills/yul-puzzles/blob/main/src/Log2.sol)
+79. [SetBit](https://github.com/RareSkills/yul-puzzles/blob/main/src/SetBit.sol)
+80. [Log2](https://github.com/RareSkills/yul-puzzles/blob/main/src/Log2.sol)
