@@ -15,6 +15,12 @@ contract BasicBank {
         assembly {
             // emit Deposit(msg.sender, msg.value)
             // increment the balance of the msg.sender by msg.value
+            mstore(0x00, caller())
+            mstore(0x20, 0)
+            let slot := keccak256(0x00, 0x40)
+            sstore(slot, add(sload(slot), callvalue()))
+            mstore(0x00, callvalue())
+            log2(0x00, 0x20, depositSelector, caller())
         }
     }
 
@@ -26,7 +32,18 @@ contract BasicBank {
             // if the balance is less than amount, revert InsufficientBalance()
             // decrement the balance of the msg.sender by amount
             // send the amount to the msg.sender
+            mstore(0x00, caller())
+            mstore(0x20, 0)
+            let slot := keccak256(0x00, 0x40)
+            let balc := sload(slot)
+            if lt(balc, amount) {
+                mstore(0x00, insufficientBalanceSelector)
+                revert(0x00, 0x04)
+            }
+            sstore(slot, sub(balc, amount))
+            let ok := call(gas(), caller(), amount, 0, 0, 0, 0)
+            mstore(0x00, amount)
+            log2(0x00, 0x20, withdrawSelector, caller())
         }
     }
 }
-
