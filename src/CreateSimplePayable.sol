@@ -11,9 +11,6 @@ contract CreateSimplePayable {
             // do this as part of create, don't transfer it after
             // hint: use the `create` opcode
             // hint: the bytecode is already in memory
-            let adr := create(callvalue(), add(deploymentBytecode, 32), deploymentBytecode)
-            mstore(0, adr)
-            return(0, 32)
         }
     }
 }
