@@ -45,6 +45,11 @@ contract DeployOneByte {
             // create a contract that has a single byte in its code
             // return the address of the contract
             // hint: use the bytecode in the comment above
+            let byteCode := 0x6001600c60003960016000f300
+            mstore(0x00, byteCode)
+            let addr := create(0, 0x13, 0x0d)
+            mstore(0x00, addr)
+            return(0x00, 0x20)
         }
     }
 }
