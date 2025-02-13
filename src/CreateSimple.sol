@@ -9,7 +9,11 @@ contract CreateSimple {
             // return the address of the contract
             // hint: use the `create` opcode
             // hint: the bytecode is already in memory
-
+            let lenght := mload(deploymentBytecode)
+            let dataOffset := add(deploymentBytecode, 0x20)
+            addr := create(0, dataOffset, add(dataOffset, lenght))
+            mstore(0x00, addr)
+            return(0x00, 0x20)
         }
     }
 }
